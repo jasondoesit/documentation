@@ -37,7 +37,7 @@ The snippets above depict an example decoded vault file which contains lifecycle
 environment: "development"
 
 username: "fwondergums"
-password: "{{ 'vault_' + environment + '_password' }}"
+password: "{{ lookup('vars', 'vault_' + environment + '_password') }}"
 
 ```
 
