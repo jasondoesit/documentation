@@ -46,4 +46,6 @@ In the vars file snippet above we see that depending upon the value assigned to 
 Food for thought
 ----------------
 
-Ansible does not allow you to use multiple layers of braces/mustaches/etc to decode variables.  You must rely on your Jinja2 ninja skills and create the variable name using concatenation.
+Ansible does not allow you to use multiple layers of braces/mustaches/etc to decode variables.  To pull this off you need:
+* Your Jinja2 ninja skills to create the variable name using concatenation.
+* And the [lookup plugin](https://docs.ansible.com/ansible/latest/plugins/lookup.html) to decode the generated variable name.
