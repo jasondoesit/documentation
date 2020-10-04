@@ -49,3 +49,9 @@ Food for thought
 Ansible does not allow you to use multiple layers of braces/mustaches/etc to decode variables.  To pull this off you need:
 * Your Jinja2 ninja skills to create the variable name using concatenation.
 * And the [lookup plugin](https://docs.ansible.com/ansible/latest/plugins/lookup.html) to decode the generated variable name.
+
+
+Code Example
+------------
+
+* [Nested Variable](https://github.com/jasondoesit/ansible_howtos/tree/master/variables/nested/example1.yml)
